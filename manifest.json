@@ -1,0 +1,17 @@
+{
+	"name":"MTG LifeApp",
+	"short_name":"LifeApp",
+	"start_url":"index.html",
+	"display":"standalone",
+	"background_color":"#5900b3",
+	"theme_color":"black",
+	"scope": ".",
+	"description":"Simple Life counter App for MTG.",
+	"icons":[
+	{
+	"src":"img/favicon96.png",					
+	"sizes":"96x96",
+	"type":"image/png"
+	}
+]
+}
