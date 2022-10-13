@@ -12,3 +12,21 @@ function decrementLife(_) {
 
 p1ButtonPlus.addEventListener('click', incrementLife);
 p1ButtonMinus.addEventListener('click', decrementLife);
+
+window.addEventListener('load', () => {
+    registerSW();
+  });
+
+  // Register the Service Worker
+  async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator
+              .serviceWorker
+              .register('serviceworker.js');
+      }
+      catch (e) {
+        console.log('SW registration failed');
+      }
+    }
+  }
