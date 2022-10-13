@@ -15,6 +15,7 @@ html, body {
 
 .life-total-p2 {
     bottom: 0px;
+    transform: scale(-1, -1);
 }
 
 .container 
